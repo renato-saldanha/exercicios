@@ -1,11 +1,14 @@
 import React from "react";
 import { Text } from "react-native";
+import Estilo from "./estilo";
 
 
-export default (props) => {
+export default ({min, max}) => {
+    const delta = max - min + 1;
+    const random = parseInt(Math.random() * delta) + min;
     return (
-        <Text>
-            O valor aleatório entre {props.min} e {props.max} é de {Math.random() * (props.max -props.min) + props.min} 
+        <Text style={Estilo.textoGrande}>
+            O valor aleatório entre {min} e {max} é de {random} 
         </Text>
     )
 }
