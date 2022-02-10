@@ -4,6 +4,8 @@ import {Text, View, StyleSheet} from 'react-native';
 
 import Primeiro from './componentes/Primeiro';
 import Comp00, {Comp1, Comp2} from './componentes/Multi';
+import MinMax from './componentes/MinMax'
+import Aleatorio from './componentes/Aleatorio'
 
 //export default () => <Text>#Primeiro Componente</Text>
 //também é um componente
@@ -15,7 +17,10 @@ export default () =>  (
     <Comp1/>
     <Comp2/>
     <Primeiro/>
-  </View>
+    <MinMax min="2" max="20"/> 
+    <MinMax min={6} max={60}/> 
+    <Aleatorio min={1} max={3}/> 
+  </View>   // ^valores numericos e com string
 )
 
 
@@ -25,6 +30,8 @@ export default () =>  (
       backgroundColor: '#A000',
       flexGrow: 1,
       justifyContent: 'center',
-      alignItems: 'center'      
+      alignItems: 'center',
+      padding: 20,
+      textAlign: 'center'
     }
  })
