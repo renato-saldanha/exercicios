@@ -29,7 +29,7 @@ import Mega from './componentes/mega/Mega';
 
 export default () =>  (
   <SafeAreaView style={style.App}>
-    <Mega qtdeNumeros={9}/>
+    <Mega />
   {/*<Pai></Pai>
     <FlexBoxV4/>
     <FlexBoxV3/>
